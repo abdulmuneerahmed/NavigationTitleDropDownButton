@@ -13,6 +13,8 @@
 		039909CF21818BE600E0DC69 /* NavigationTitleDropDown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 039909CD21818BE600E0DC69 /* NavigationTitleDropDown.xcdatamodeld */; };
 		039909D121818BE700E0DC69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039909D021818BE700E0DC69 /* Assets.xcassets */; };
 		039909D421818BE700E0DC69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039909D221818BE700E0DC69 /* LaunchScreen.storyboard */; };
+		039909E72181C0CD00E0DC69 /* NavigationTitleDropDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039909E62181C0CD00E0DC69 /* NavigationTitleDropDownButton.swift */; };
+		039909EA2181C43600E0DC69 /* ic_readMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 039909E92181C43600E0DC69 /* ic_readMe.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		039909D021818BE700E0DC69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039909D321818BE700E0DC69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		039909D521818BE700E0DC69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039909E62181C0CD00E0DC69 /* NavigationTitleDropDownButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTitleDropDownButton.swift; sourceTree = "<group>"; };
+		039909E82181C34200E0DC69 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		039909E92181C43600E0DC69 /* ic_readMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_readMe.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +45,8 @@
 		039909BA21818BE500E0DC69 = {
 			isa = PBXGroup;
 			children = (
+				039909E82181C34200E0DC69 /* README.md */,
+				039909E92181C43600E0DC69 /* ic_readMe.png */,
 				039909C521818BE500E0DC69 /* NavigationTitleDropDown */,
 				039909C421818BE500E0DC69 /* Products */,
 			);
@@ -56,15 +63,72 @@
 		039909C521818BE500E0DC69 /* NavigationTitleDropDown */ = {
 			isa = PBXGroup;
 			children = (
-				039909C621818BE500E0DC69 /* AppDelegate.swift */,
-				039909C821818BE600E0DC69 /* ViewController.swift */,
-				039909CA21818BE600E0DC69 /* Main.storyboard */,
-				039909D021818BE700E0DC69 /* Assets.xcassets */,
-				039909D221818BE700E0DC69 /* LaunchScreen.storyboard */,
-				039909D521818BE700E0DC69 /* Info.plist */,
-				039909CD21818BE600E0DC69 /* NavigationTitleDropDown.xcdatamodeld */,
+				039909DF21818C1000E0DC69 /* Models */,
+				039909DD21818C0100E0DC69 /* Assets */,
+				039909DC21818BF900E0DC69 /* Storyboards */,
+				039909DB21818BED00E0DC69 /* Classes */,
+				039909E121818C3C00E0DC69 /* OtherClasses */,
+				039909DE21818C0700E0DC69 /* Resources */,
 			);
 			path = NavigationTitleDropDown;
+			sourceTree = "<group>";
+		};
+		039909DB21818BED00E0DC69 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				039909C621818BE500E0DC69 /* AppDelegate.swift */,
+				039909C821818BE600E0DC69 /* ViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		039909DC21818BF900E0DC69 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				039909CA21818BE600E0DC69 /* Main.storyboard */,
+				039909D221818BE700E0DC69 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		039909DD21818C0100E0DC69 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				039909D021818BE700E0DC69 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		039909DE21818C0700E0DC69 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				039909D521818BE700E0DC69 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		039909DF21818C1000E0DC69 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				039909E021818C2600E0DC69 /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		039909E021818C2600E0DC69 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				039909CD21818BE600E0DC69 /* NavigationTitleDropDown.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		039909E121818C3C00E0DC69 /* OtherClasses */ = {
+			isa = PBXGroup;
+			children = (
+				039909E62181C0CD00E0DC69 /* NavigationTitleDropDownButton.swift */,
+			);
+			path = OtherClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +192,7 @@
 				039909D421818BE700E0DC69 /* LaunchScreen.storyboard in Resources */,
 				039909D121818BE700E0DC69 /* Assets.xcassets in Resources */,
 				039909CC21818BE600E0DC69 /* Main.storyboard in Resources */,
+				039909EA2181C43600E0DC69 /* ic_readMe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039909E72181C0CD00E0DC69 /* NavigationTitleDropDownButton.swift in Sources */,
 				039909CF21818BE600E0DC69 /* NavigationTitleDropDown.xcdatamodeld in Sources */,
 				039909C921818BE600E0DC69 /* ViewController.swift in Sources */,
 				039909C721818BE500E0DC69 /* AppDelegate.swift in Sources */,
@@ -286,14 +352,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NavigationTitleDropDown/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NavigationTitleDropDown/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.NavigationTitleDropDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,14 +371,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NavigationTitleDropDown/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/NavigationTitleDropDown/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yudiz.NavigationTitleDropDown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
