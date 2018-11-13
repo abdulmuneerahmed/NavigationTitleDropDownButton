@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// NavigationTitleDropDown
+/// NavigationTitleDropDownButton
 class NavigationTitleDropDownButton: UIButton {
     
     /// Variable Declaration(s)
@@ -77,14 +77,14 @@ class NavigationTitleDropDownButton: UIButton {
 // MARK: - UI Related Method(s)
 extension NavigationTitleDropDownButton {
     
-    func prepareUIView() {
+    fileprivate func prepareUIView() {
         /// Adding SubView(s)
         addSubView()
         /// Preparing constraint(s)
         prepareConstraintForHorizontalStackView()
     }
     
-    func addSubView() {
+    fileprivate func addSubView() {
         verticalStackView.addArrangedSubview(lblTitle)
         verticalStackView.addArrangedSubview(lblSubTitle)
         horizontalStackView.addArrangedSubview(verticalStackView)
